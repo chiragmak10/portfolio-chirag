@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Portfolio Chirag
 
-First, run the development server:
+Modern Next.js portfolio project following industry standards.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+```
+src/
+	components/   # Reusable React components
+	constants/    # Application-wide constants
+	features/     # Feature modules
+	hooks/        # Custom React hooks
+public/         # Static assets
+app/            # Next.js app directory
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Install dependencies
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Start development server
+```sh
+npm run dev
+```
 
-## Learn More
+### Lint & Format
+```sh
+npm run lint
+npm run format
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Environment Variables
+Copy `.env.example` to `.env.local` and update as needed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Git Workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Uses [Husky](https://typicode.github.io/husky) for pre-commit and commit-msg hooks
+- [Commitlint](https://commitlint.js.org/) enforces Conventional Commits
+- [lint-staged](https://github.com/okonet/lint-staged) for staged file linting
 
-## Deploy on Vercel
+## Pull Requests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Use the provided PR template
+- PR titles must follow Conventional Commits
+- Ensure all checks pass before requesting review
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## VS Code Recommended Extensions
+
+- ESLint
+- Prettier
+- Stylelint
+- GitHub Pull Requests
+
+## License
+
+MIT
