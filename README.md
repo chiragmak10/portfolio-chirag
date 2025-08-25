@@ -1,4 +1,3 @@
-
 # Portfolio Chirag
 
 Modern Next.js portfolio project following industry standards.
@@ -18,22 +17,26 @@ app/            # Next.js app directory
 ## Development
 
 ### Install dependencies
+
 ```sh
 npm install
 ```
 
 ### Start development server
+
 ```sh
 npm run dev
 ```
 
 ### Lint & Format
+
 ```sh
 npm run lint
 npm run format
 ```
 
 ### Environment Variables
+
 Copy `.env.example` to `.env.local` and update as needed.
 
 ## Git Workflow
