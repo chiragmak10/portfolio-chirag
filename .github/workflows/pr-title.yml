@@ -1,11 +1,11 @@
 name: PR Title Convention
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, edited, reopened, synchronize]
 
 permissions:
-  pull-requests: read
+  pull-requests: write
 
 jobs:
   pr-title:
@@ -26,5 +26,5 @@ jobs:
             perf
             test
           requireScope: false
-          subjectPattern: ".+"
+          subjectPattern: '^(feat|fix|chore|docs|style|refactor|perf|test)(\(.+\))?: .+$'
           wip: true
