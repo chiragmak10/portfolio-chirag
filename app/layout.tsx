@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chirag - Full Stack Developer",
-  description: "Modern portfolio showcasing full-stack development projects, skills, and experience in React, Next.js, Node.js, and more.",
+  title: "Chirag Makdiya - Full Stack Developer",
+  description: "Modern portfolio showcasing full-stack development projects, skills, and experience in React, Next.js, Node.js, and more by Chirag Makdiya.",
 };
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
